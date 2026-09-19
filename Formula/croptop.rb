@@ -11,7 +11,7 @@ class Croptop < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_darwin_amd64.tar.gz"
-      sha256 "da0427f62d8dc7faa93500efd9f7ab3584d2a9613d9c4a9ba1623629896b30e9"
+      sha256 "053b56c7125a5eb73cd60701b16ce08c3be79be8782c58ce30f732f56c0883c8"
 
       define_method(:install) do
         bin.install "croptop"
@@ -19,7 +19,7 @@ class Croptop < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_darwin_arm64.tar.gz"
-      sha256 "73641c8ab7065e450812070bc0c59f5524f2c2b05787bedbd66023aabfe194e1"
+      sha256 "fa93983f62676b1abff31c2d86807bcf4d2b1eef3a06b9633c75333784c89829"
 
       define_method(:install) do
         bin.install "croptop"
@@ -30,14 +30,14 @@ class Croptop < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_linux_amd64.tar.gz"
-      sha256 "862be36573ce59fef5832b2f1e6211bd8366d731399971c73be81a7c9fefd6d7"
+      sha256 "7bbdc287b6adb6ad993f42010e00a28a55fcbb5f4a3bc025e1316b7354d243ff"
       define_method(:install) do
         bin.install "croptop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_linux_arm64.tar.gz"
-      sha256 "4dac2a9abe8c02ee61dde617a28d53138333ff15d32255c45c0923e23054e1dc"
+      sha256 "77dcf5cc9f4ef932d42bc513f4d2aae643f4a63f26ad9c67bd1c6210768b570a"
       define_method(:install) do
         bin.install "croptop"
       end
