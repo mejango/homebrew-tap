@@ -5,21 +5,21 @@
 class Croptop < Formula
   desc "Publish websites peer to peer"
   homepage "https://crop.top"
-  version "0.13.3"
+  version "0.13.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mejango/croptop/releases/download/v0.13.3/croptop_0.13.3_darwin_amd64.tar.gz"
-      sha256 "624778c76d5215c03cead977a59f1e92ab4e6ff1d165a52210de669f212c1593"
+      url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_darwin_amd64.tar.gz"
+      sha256 "da0427f62d8dc7faa93500efd9f7ab3584d2a9613d9c4a9ba1623629896b30e9"
 
       define_method(:install) do
         bin.install "croptop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mejango/croptop/releases/download/v0.13.3/croptop_0.13.3_darwin_arm64.tar.gz"
-      sha256 "908d83eeb348b95ffad34ba36c2cc5179511d277ef8e57ce6406aa2fc7aaa086"
+      url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_darwin_arm64.tar.gz"
+      sha256 "73641c8ab7065e450812070bc0c59f5524f2c2b05787bedbd66023aabfe194e1"
 
       define_method(:install) do
         bin.install "croptop"
@@ -29,15 +29,15 @@ class Croptop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mejango/croptop/releases/download/v0.13.3/croptop_0.13.3_linux_amd64.tar.gz"
-      sha256 "7745c8377e58ca6d81278355382faa415b6deecc7d472085f5a0a810cb2ad186"
+      url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_linux_amd64.tar.gz"
+      sha256 "862be36573ce59fef5832b2f1e6211bd8366d731399971c73be81a7c9fefd6d7"
       define_method(:install) do
         bin.install "croptop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mejango/croptop/releases/download/v0.13.3/croptop_0.13.3_linux_arm64.tar.gz"
-      sha256 "95782402b46bcdbaa1d3eb8bd41ceda4f829c01c29bb4f37f0d8f9fd33647e5c"
+      url "https://github.com/mejango/croptop/releases/download/v0.13.4/croptop_0.13.4_linux_arm64.tar.gz"
+      sha256 "4dac2a9abe8c02ee61dde617a28d53138333ff15d32255c45c0923e23054e1dc"
       define_method(:install) do
         bin.install "croptop"
       end
